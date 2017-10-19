@@ -14,6 +14,8 @@
 		41EDB8EE1F99026100CF3C3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41EDB8EC1F99026100CF3C3A /* LaunchScreen.storyboard */; };
 		41EDB8F91F99026200CF3C3A /* DAC_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EDB8F81F99026200CF3C3A /* DAC_TrackerTests.swift */; };
 		41EDB9041F99026200CF3C3A /* DAC_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EDB9031F99026200CF3C3A /* DAC_TrackerUITests.swift */; };
+		41EDB9131F9902AA00CF3C3A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EDB9121F9902AA00CF3C3A /* NetworkManager.swift */; };
+		41EDB9171F9903B600CF3C3A /* ServerAssetsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EDB9161F9903B600CF3C3A /* ServerAssetsResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		41EDB8FF1F99026200CF3C3A /* DAC-TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DAC-TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41EDB9031F99026200CF3C3A /* DAC_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAC_TrackerUITests.swift; sourceTree = "<group>"; };
 		41EDB9051F99026200CF3C3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41EDB9121F9902AA00CF3C3A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		41EDB9161F9903B600CF3C3A /* ServerAssetsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerAssetsResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		41EDB8E21F99026100CF3C3A /* DAC-Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				41EDB9141F99031C00CF3C3A /* Models */,
+				41EDB9111F99029A00CF3C3A /* Network */,
 				41EDB8E31F99026100CF3C3A /* AppDelegate.swift */,
 				41EDB8E51F99026100CF3C3A /* ViewController.swift */,
 				41EDB8E71F99026100CF3C3A /* Main.storyboard */,
@@ -123,6 +129,30 @@
 				41EDB9051F99026200CF3C3A /* Info.plist */,
 			);
 			path = "DAC-TrackerUITests";
+			sourceTree = "<group>";
+		};
+		41EDB9111F99029A00CF3C3A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				41EDB9121F9902AA00CF3C3A /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		41EDB9141F99031C00CF3C3A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				41EDB9151F99032600CF3C3A /* ServerModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		41EDB9151F99032600CF3C3A /* ServerModels */ = {
+			isa = PBXGroup;
+			children = (
+				41EDB9161F9903B600CF3C3A /* ServerAssetsResponse.swift */,
+			);
+			path = ServerModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +289,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41EDB9131F9902AA00CF3C3A /* NetworkManager.swift in Sources */,
 				41EDB8E61F99026100CF3C3A /* ViewController.swift in Sources */,
+				41EDB9171F9903B600CF3C3A /* ServerAssetsResponse.swift in Sources */,
 				41EDB8E41F99026100CF3C3A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
