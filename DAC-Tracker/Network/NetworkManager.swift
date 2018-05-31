@@ -12,14 +12,14 @@ import Foundation
 
 enum Routing {
   
-  private static let rootURL = "https://virgil-api.paradiso.ventures/"
+  private static let rootURL = "https://api.com/"
   
   case assets
   
   var url: URL {
     switch self {
     case .assets:
-      return URL(string: Routing.rootURL + "search/")!
+      return URL(string: Routing.rootURL)!
     }
   }
   

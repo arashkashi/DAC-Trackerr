@@ -9,6 +9,7 @@
 import Foundation
 
 
+
 struct ServerAssetsResponse: Decodable {
   
   let data: ServerAssetsData
